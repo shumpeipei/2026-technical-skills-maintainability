@@ -32,6 +32,15 @@ SE保守・運用職からSE開発職への転向希望者を対象にした、�
 └── docs/                          # スライドの HTML 出力
 ```
 
+## 資料の使用タイミング
+
+| ファイル | 内容 | 使用タイミング |
+| -------- | ---- | -------------- |
+| `member-materials/01_講義資料.md` | リファクタリング基礎・SOLID原則などの参考資料 | 受講前・講義中 |
+| `member-materials/02_演習_問題コード.py` | リファクタリング対象の注文管理システム | 個人演習 |
+| `member-materials/03_演習_模範解答.py` | 問題コードの模範解答 | 全体共有後 |
+| `member-materials/04_変更影響チェックリスト.md` | 変更影響範囲を分析するためのチェックリスト | ケーススタディ演習 |
+
 ```bash
 git clone https://github.com/shumpeipei/2026-technical-skills-maintainability.git
 ```
@@ -61,6 +70,16 @@ python3 member-materials/02_演習_問題コード.py
 
 # 模範解答
 python3 member-materials/03_演習_模範解答.py
+```
+
+### `member-materials/` をカレントにする場合
+
+```bash
+# 問題コード
+python3 02_演習_問題コード.py
+
+# 模範解答
+python3 03_演習_模範解答.py
 ```
 
 ## 演習の概要
