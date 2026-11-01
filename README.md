@@ -22,30 +22,21 @@ SE保守・運用職からSE開発職への転向希望者を対象にした、�
 
 ```
 ./
-├── 00_ワークショップ概要.md      # ファシリテーター向けタイムライン・進行ガイド
-└── member-materials/              # メンバー向け資料（非公開サブモジュール）
-    ├── 01_講義資料.md             # 受講者参考資料（リファクタリング基礎・SOLID原則など）
-    ├── 02_演習_問題コード.py      # 個人演習用の問題コード（Python）
-    ├── 03_演習_模範解答.py        # 模範解答（全体共有後に公開）
-    └── 04_変更影響チェックリスト.md # ケーススタディ演習用シート
+├── 00_ワークショップ概要.md       # ファシリテーター向けタイムライン・進行ガイド
+├── member-materials/              # メンバー向け資料
+│   ├── 01_講義資料.md             # 受講者参考資料（リファクタリング基礎・SOLID原則など）
+│   ├── 02_演習_問題コード.py      # 個人演習用の問題コード（Python）
+│   ├── 03_演習_模範解答.py        # 模範解答（全体共有後に公開）
+│   └── 04_変更影響チェックリスト.md # ケーススタディ演習用シート
+├── slide/                         # 当日スライド
+└── docs/                          # スライドの HTML 出力
 ```
-
-`member-materials` はメンバー向けの非公開リポジトリを参照するサブモジュールです。
-取得には、サブモジュール側のリポジトリ権限が必要です。
-
-初回取得時は次のコマンドを実行してください。
 
 ```bash
-git clone --recurse-submodules https://github.com/shumpeipei/202609xx_work_shop.git
+git clone https://github.com/shumpeipei/2026-technical-skills-maintainability.git
 ```
 
-既に親リポジトリを取得済みの場合は、次のコマンドで資料を取得できます。
-
-```bash
-git submodule update --init --recursive
-```
-
-[01_講義資料.md](member-materials/01_講義資料.md) などの資料は、サブモジュール内にあります。
+[01_講義資料.md](member-materials/01_講義資料.md) などの資料は `member-materials/` にあります。
 
 ### Python
 
